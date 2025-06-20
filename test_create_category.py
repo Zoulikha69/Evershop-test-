@@ -45,7 +45,7 @@ class TestCategoryCreation:
         driver.set_window_size(1280, 1024)
         yield driver
         print("\n=== Pause pour observer la fenêtre ===")
-        time.sleep(10)  # Pause de 10 secondes pour observer la fenêtre
+        time.sleep(10)  # Pause de 10 secondes pour observer la grande  fenêtre
         print("\n=== Fermeture du navigateur ===")
         driver.quit()
 
