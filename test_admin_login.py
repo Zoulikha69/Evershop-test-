@@ -73,7 +73,7 @@ class TestAdminLogin:
         try:
             # Toastify ou message d'erreur classique
             error = self.wait_for_element(driver, By.CSS_SELECTOR, "div.Toastify__toast-body, .error-message, .alert-danger, .text-critical", timeout=5)
-            assert error.text.strip() != "", "Le message d'erreur est vide"
+            assert error.text.strip() != "", "Invalid email or password"
             print(f"Message d'erreur affiché : {error.text}")
         except TimeoutException:
             raise AssertionError("Aucun message d'erreur affiché après un login échoué")
